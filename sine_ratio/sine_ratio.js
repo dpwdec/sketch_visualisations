@@ -5,8 +5,8 @@ function setup() {
   let canvas = createCanvas(600, 150);
   canvas.parent('sine_ratio');
   slider = createSlider();
-  slider.position(0, 150)
-  slider.parent('sine_ratio')
+  // slider.position(0, 150)
+  // slider.parent('sine_ratio')
 }
 
 function draw() {
