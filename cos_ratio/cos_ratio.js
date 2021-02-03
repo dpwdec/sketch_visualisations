@@ -2,8 +2,11 @@ let input, button, greeting, slider;
 
 function setup() {
   // create canvas
-  createCanvas(600, 150);
+  let canvas = createCanvas(600, 150);
+  canvas.parent('cos_ratio');
+  document.getElementById('cos_ratio').appendChild(document.createElement('br'))
   slider = createSlider();
+  slider.parent('cos_ratio')
 }
 
 function draw() {
