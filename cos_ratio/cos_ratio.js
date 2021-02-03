@@ -1,12 +1,12 @@
-let input, button, greeting, slider;
+let cos_slider;
 
 function setup() {
   // create canvas
   let canvas = createCanvas(600, 150);
   canvas.parent('cos_ratio');
   document.getElementById('cos_ratio').appendChild(document.createElement('br'))
-  slider = createSlider();
-  slider.parent('cos_ratio')
+  cos_slider = createSlider();
+  cos_slider.parent('cos_ratio')
 }
 
 function draw() {
@@ -23,7 +23,7 @@ function draw() {
       line(20 + x, 95, 20 + x, 105);
     });
 
-  let deltaX = slider.value() / 1000.0;
+  let deltaX = cos_slider.value() / 1000.0;
 
   let deltaXCos = 1.0 - Math.cos(deltaX);
 
