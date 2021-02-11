@@ -50,7 +50,7 @@ function draw() {
     
     cordX = adjacent > 0 ? CENTERX + RADIUS : CENTERX - RADIUS
     stroke(255, 0, 0)
-    line(circleX, circleY, cordX, CENTERY)
+    line(circleX, circleY, circleX, CENTERY)
 
     stroke(0)
     fill(0)
