@@ -43,6 +43,7 @@ function draw() {
     line(CENTERX, CENTERY - 150, CENTERX, CENTERY + 150)
 
     // console.log(theta)
+    // instead of doing this you could just scale by H (distance)?
     circleX = adjacent > 0 ? CENTERX + (RADIUS * Math.cos(theta)) : CENTERX - (RADIUS * Math.cos(theta))
     circleY = CENTERY + (RADIUS * Math.sin(theta))
 
